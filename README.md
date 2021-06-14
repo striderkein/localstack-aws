@@ -1,7 +1,7 @@
 # localstack-for-dkids
 
 ## What's this?
-mocking S3 for local invoking Lambda Function: update_coin_information.
+mocking S3 for local invoking Lambda Function
 
 ## preparation
 ### need to Install
