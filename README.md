@@ -30,10 +30,18 @@ make_bucket: YOUR_BUCKET
 ```
 ### upload file
 ```
-% aws s3 --endpoint-url=http://localhost:4566 cp YOUR/PATH/TO/FILE s3://fsi-xml-bucket --profile=YOUR_PROFILE_FOR_TEST
+aws s3 --endpoint-url=http://localhost:4566 cp YOUR/PATH/TO/FILE s3://fsi-xml-bucket --profile=YOUR_PROFILE_FOR_TEST
 ```
 
 when success, you'll see below
 ```
 upload: YOUR/PATH/TO/FILE to s3://YOUR_BUCKET/FILE
+```
+### delete file
+```
+aws s3 --endpoint-url=http://localhost:4566 rm s3://fsi-xml-bucket/FILE_NEED_TO_DELETE --profile=YOUR_PROFILE_FOR_TEST
+```
+### check file list
+```
+aws s3 --endpoint-url=http://localhost:4566 ls s3://fsi-xml-bucket --profile=YOUR_PROFILE_FOR_TEST
 ```
