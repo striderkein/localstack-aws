@@ -30,7 +30,11 @@ make_bucket: YOUR_BUCKET
 ```
 ### upload file
 ```
-aws s3 --endpoint-url=http://localhost:4566 cp YOUR/PATH/TO/FILE s3://fsi-xml-bucket --profile=YOUR_PROFILE_FOR_TEST
+aws s3 cp YOUR/PATH/TO/FILE s3://YOUR_BUCKET --endpoint-url=http://localhost:4566 --profile=YOUR_PROFILE_FOR_TEST
+```
+`fsi-xml-bucket` にアップロードする場合
+```
+aws s3 cp YOUR/PATH/TO/FILE s3://fsi-xml-bucket --endpoint-url=http://localhost:4566 --profile=YOUR_PROFILE_FOR_TEST
 ```
 
 when success, you'll see below
